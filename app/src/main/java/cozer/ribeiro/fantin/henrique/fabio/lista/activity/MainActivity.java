@@ -89,8 +89,10 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+                // Possível retirada
                 MainActivityViewModel vm = new ViewModelProvider( this ).get(MainActivityViewModel.class );
                 List<MyItem> itens = vm.getItens();
+                //Possível retirada
                 itens.add(myItem);
                 myAdapter.notifyItemInserted(itens.size()-1);
             }
